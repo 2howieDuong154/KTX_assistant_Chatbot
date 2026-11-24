@@ -1,0 +1,49 @@
+# ---------- Bí mật ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# ---------- Dữ liệu thật (có thể có email, SĐT, tài liệu nội bộ) ----------
+data/raw/
+data/processed/
+data/ocr/
+!data/sample/
+
+# ---------- Vector DB ----------
+qdrant_data/
+qdrant_storage/
+
+# ---------- Model tải về / cache ----------
+.cache/
+models/
+huggingface/
+
+# ---------- Chainlit ----------
+.chainlit/
+.files/
+chainlit.md
+# Nếu muốn giữ cấu hình giao diện trong repo, xoá dòng .chainlit/ ở trên
+# và thay bằng: .chainlit/*.db
+
+# ---------- Kết quả đánh giá, log ----------
+logs/
+*.log
+eval/results/
+
+# ---------- IDE / hệ điều hành ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
